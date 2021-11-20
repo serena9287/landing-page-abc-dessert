@@ -29,6 +29,11 @@ body {
     margin: 0;
     padding: 0;
     list-style: none;
+    flex-wrap: wrap;
+}
+
+.main-nav li{
+    margin:0.5rem 0;
 }
 
 .main-nav a{
@@ -116,18 +121,26 @@ body {
     align-items: center;
 }
 
-.about-image-div{
-    flex: 1 1 300px;
-}
-
-.about-text{
-    flex: 1 1 300px;
-}
 
 .about-image{
     display: block;
     margin: 0 auto;
-    width: 350px;
+    width: 80%;
+    max-width: 270px;
+}
+
+.about-text{
+    display: block;
+    margin: 1.5rem auto;
+    width: 90%;
+    min-width: 350px;
+    max-width: 500px;
+}
+
+@media (max-width: 768px){
+    .about-content{
+        flex-wrap: wrap;
+    }
 }
 
 .section-title{
@@ -227,6 +240,7 @@ body {
 
 .contact-us-text{
     margin: 0 2rem;
+    
 }
 
 .map-image{
